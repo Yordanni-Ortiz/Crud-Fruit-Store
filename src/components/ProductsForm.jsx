@@ -9,7 +9,7 @@ const product_Create = () => {
   Swal.fire({
     title: '<h2 class="orange">¡Creado con Éxito!</h2>',
     html: '<b class="green">¡Operacion Éxitosa!</b>',
-    imageUrl: "src/assets/icons/naranja-feliz.png",
+    imageUrl: "/public/naranja-feliz.png",
     imageWidth: "40%",
     background: "#0A1C3E",
     text: "center",
@@ -24,7 +24,7 @@ const product_Edit = () => {
   Swal.fire({
     title: '<h2 class="orange">¡Editado con Éxito!</h2>',
     html: '<b class="green">¡Operacion Éxitosa!</b>',
-    imageUrl: "src/assets/icons/mango-molesto.png",
+    imageUrl: "/public/mango-molesto.png",
     imageWidth: "30%",
     background: "#0A1C3E",
     button: "aceptar",
