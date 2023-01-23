@@ -227,16 +227,3 @@ input:checked + .slider:before {
 .Estatus {
   margin: auto;
 }
-
-/* ---media query---- */
-
-@media (max-width: 850px) {
-  .PrincipalContainer {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .PrincipalContainer .principalForm {
-    width: 60%;
-  }
-}
