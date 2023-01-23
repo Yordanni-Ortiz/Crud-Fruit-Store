@@ -7,29 +7,31 @@ import Swal from "sweetalert2";
 
 const product_Create = () => {
   Swal.fire({
-    title: '<h2 class="orange">¡..Creado con Éxito..!</h2>',
+    title: '<h2 class="orange">¡Creado con Éxito!</h2>',
     html: '<b class="green">¡Operacion Éxitosa!</b>',
-    icon: "success",
+    imageUrl: "src/assets/icons/naranja-feliz.png",
+    imageWidth: "40%",
+    background: "#0A1C3E",
+    text: "center",
     button: "aceptar",
     timer: "2000",
-    background: "#0A1C3E",
     backdrop: false,
     timerProgressBar: true,
-    toast: true,
     position: "top-start",
   });
 };
 const product_Edit = () => {
   Swal.fire({
-    title: '<h2 class="orange">¡.Editado con Éxito.!</h2>',
+    title: '<h2 class="orange">¡Editado con Éxito!</h2>',
     html: '<b class="green">¡Operacion Éxitosa!</b>',
-    icon: "info",
+    imageUrl: "src/assets/icons/mango-molesto.png",
+    imageWidth: "30%",
+    background: "#0A1C3E",
     button: "aceptar",
     timer: "2000",
     background: "#0A1C3E",
     backdrop: false,
     timerProgressBar: true,
-    toast: true,
     position: "top-end",
   });
 };

@@ -5,10 +5,11 @@ import Swal from "sweetalert2";
 const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
   const eliminarProducto = (id) => {
     Swal.fire({
-      title: "¿Estás seguro?",
-      text: "No podrás revertir esta acción.",
-      type: "warning",
-
+      title: '<h2 class="orange">¿Estás seguro?</h2>',
+      html: '<b class="red">No podrás revertir esta acción.</b>',
+      imageUrl: "src/assets/icons/fruta-pensante.png",
+      imageWidth: "30%",
+      background: "#0A1C3E",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
@@ -16,14 +17,22 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
       cancelButtonText: "Cancelar",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          "¡Eliminado!",
-          "El registro se eliminó correctamente.",
-          "success"
-        );
+        Swal.fire({
+          title: '<h2 class="red">¡Eliminado!</h2>',
+          html: '<b class="green">El producto se eliminó correctamente.</b>',
+          imageUrl: "src/assets/icons/papaya-podrida.png",
+          imageWidth: "30%",
+          background: "#0A1C3E",
+        });
         deleteProduct(id);
-      } else if (result.isDenied) {
-        Swal.fire("Información", "No pasó nada", "info");
+      } else if (result.isDismissed) {
+        Swal.fire({
+          title: '<h2 class="orange">Información</h2>',
+          html: '<b class="green">El producto NO fue eliminado.</b>',
+          imageUrl: "src/assets/icons/brocoli-asustado.png",
+          imageWidth: "30%",
+          background: "#0A1C3E",
+        });
       }
     });
   };
@@ -44,12 +53,12 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
               </div>
               <div>
                 <h3>Precio:</h3>
-                <p>$ {dataApi.price}</p>
+                <p>💲 {dataApi.price}</p>
               </div>
-              <div className="Estatus">
-                <h3>Estatus:</h3>
-
-                {dataApi.isAvailable ? "DISPONIBLE" : "AGOTADO"}
+              <div>
+                <p className="Estatus">
+                  {dataApi.isAvailable ? "✅ DISPONIBLE" : "❌ AGOTADO"}
+                </p>
               </div>
               <div>
                 <h3 className="bt_modify">Editar</h3>

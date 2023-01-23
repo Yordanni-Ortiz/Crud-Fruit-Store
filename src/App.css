@@ -12,7 +12,7 @@ body {
   background-repeat: repeat-y;
   background-size: 100%;
 }
-.rojo {
+.red {
   color: red;
 }
 .orange {
@@ -223,6 +223,9 @@ input:checked + .slider:before {
 .icon_2 {
   width: 40px;
   cursor: pointer;
+}
+.Estatus {
+  margin: auto;
 }
 
 /* ---media query---- */
