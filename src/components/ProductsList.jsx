@@ -7,7 +7,7 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
     Swal.fire({
       title: '<h2 class="orange">¿Estás seguro?</h2>',
       html: '<b class="red">No podrás revertir esta acción.</b>',
-      imageUrl: "/public/fruta-pensante.png",
+      imageUrl: "/fruta-pensante.png",
       imageWidth: "30%",
       background: "#0A1C3E",
       showCancelButton: true,
@@ -20,7 +20,7 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
         Swal.fire({
           title: '<h2 class="red">¡Eliminado!</h2>',
           html: '<b class="green">El producto se eliminó correctamente.</b>',
-          imageUrl: "/public/papaya-podrida.png",
+          imageUrl: "/papaya-podrida.png",
           imageWidth: "30%",
           background: "#0A1C3E",
         });
@@ -29,7 +29,7 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
         Swal.fire({
           title: '<h2 class="orange">Información</h2>',
           html: '<b class="green">El producto NO fue eliminado.</b>',
-          imageUrl: "/public/brocoli-asustado.png",
+          imageUrl: "/brocoli-asustado.png",
           imageWidth: "30%",
           background: "#0A1C3E",
         });
