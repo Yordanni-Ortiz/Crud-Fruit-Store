@@ -1,6 +1,7 @@
 import Eliminar from "../assets/icons/basura.png";
 import Editar from "../assets/icons/editar.png";
 import Swal from "sweetalert2";
+import '../assets/styles/ProductList.css'
 
 const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
   const eliminarProducto = (id) => {
@@ -40,7 +41,7 @@ const ProductsList = ({ dataApi, deleteProduct, editProduct }) => {
   return (
     <div className="container-table">
       <article className="table">
-        <div className="table_card">
+        <div className="table_card" style={{display: "flex", justifyContent: "center"}}>
           {dataApi.map((dataApi, index) => (
             <div className="info_table" key={index}>
               <h2>Producto</h2>

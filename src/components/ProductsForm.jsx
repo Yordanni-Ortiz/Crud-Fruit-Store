@@ -4,6 +4,7 @@ import tienda from "../assets/icons/tienda.png";
 import categoria from "../assets/icons/categorias.png";
 import precio from "../assets/icons/precio.png";
 import Swal from "sweetalert2";
+import '../assets/styles/ProductForm.css'
 
 const product_Create = () => {
   Swal.fire({

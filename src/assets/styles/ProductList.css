@@ -1,0 +1,78 @@
+
+/* --------style table--------- */
+.container-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .table_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 40px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .info_table {
+    background: #0a1c3e;
+    height: 340px;
+    width: 250px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff851b;
+  }
+  .info_table div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+  }
+  .info_table h2 {
+    text-align: center;
+    color: #ff851b;
+    margin-bottom: 10px;
+  }
+  .info_table h3 {
+    color: #ff851b;
+  }
+  .bt_modify {
+    margin-top: 12px;
+    margin-left: auto;
+  }
+  
+  /* style icon table */
+  .container-table .table tr .bt_trash {
+    background-color: transparent;
+    border: none;
+    display: flex;
+  }
+  .container-table .table tr .bt_edit {
+    background-color: transparent;
+    border: none;
+    display: flex;
+  }
+  
+  .bt_trash,
+  .bt_edit {
+    margin: 0 auto;
+    background: none;
+    border: none;
+    height: 50px;
+  }
+  
+  .icons {
+    margin: 5px 10px;
+    width: 20px;
+    padding-top: 2px;
+  }
+  .icon_2 {
+    width: 40px;
+    cursor: pointer;
+  }
+  .Estatus {
+    margin: auto;
+  }
