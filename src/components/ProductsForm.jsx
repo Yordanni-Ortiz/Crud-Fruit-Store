@@ -68,9 +68,9 @@ const ProductsForm = ({
             Producto
           </label>
           <div className="containerInpBtn">
-            <button className="btInp">
+            <div className="btInp">
               <img className="icons" src={tienda} alt="" />
-            </button>
+            </div>
 
             <input
               className="inp"
@@ -87,9 +87,9 @@ const ProductsForm = ({
             Categoria
           </label>
           <div className="containerInpBtn">
-            <button className="btInp">
+            <div className="btInp">
               <img className="icons" src={categoria} alt="" />
-            </button>
+            </div>
             <input
               className="inp"
               type="text"
@@ -105,9 +105,9 @@ const ProductsForm = ({
             Precio
           </label>
           <div className="containerInpBtn">
-            <button className="btInp">
+            <div className="btInp">
               <img className="icons" src={precio} alt="" />
-            </button>
+            </div>
             <input
               className="inp"
               type="number"
