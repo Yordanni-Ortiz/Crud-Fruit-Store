@@ -30,7 +30,6 @@ const product_Edit = () => {
     background: "#0A1C3E",
     button: "aceptar",
     timer: "2000",
-    background: "#0A1C3E",
     backdrop: false,
     timerProgressBar: true,
     position: "top-end",
