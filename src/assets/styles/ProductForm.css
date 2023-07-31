@@ -101,7 +101,6 @@
   /* The slider */
   .slider {
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
@@ -116,16 +115,14 @@
     height: 18px;
     width: 18px;
     left: 8px;
-    bottom: 7px;
+    bottom: 6px;
     background-color: #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+    cursor: pointer;
   }
   input:checked + .slider {
     background-color: #ff851b;
-  }
-  input:focus + .slider {
-    box-shadow: 0 0 10px #2196f3;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
